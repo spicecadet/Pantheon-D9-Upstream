@@ -12,6 +12,6 @@
     },
     "require": {
         "drupal/entity_share": "^3.0@RC",
-        "drupal/search_api_federated_solr": "^3.1"
+        "drupal/search_api_federated_solr": "4x-dev"
     }
 }
