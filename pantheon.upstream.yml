@@ -18,7 +18,7 @@ workflows:
     after:
       - type: webphp
         description:  Blank script to try to fix container not being ready yet
-        script: private/scripts/mosaic-quicksilver/deploy_product/fix_race_condition.php
+        script: script.php
       - type: webphp
         description:  Echo out all available vars for after process of upstream site creation
         script: private/scripts/echo_quicksilver_vars_available.php
