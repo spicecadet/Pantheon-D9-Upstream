@@ -17,7 +17,10 @@ workflows:
   deploy_product:
     after:
       - type: webphp
-        description:  Blank script to try to fix container not being ready yet
+        description:  Wakeup 1
+        script: private/scripts/mosaic-quicksilver/deploy_product/fix_race_condition.php
+      - type: webphp
+        description:  Wakeup 2
         script: private/scripts/mosaic-quicksilver/deploy_product/fix_race_condition.php
       - type: webphp
         description:  Echo out all available vars for after process of upstream site creation
