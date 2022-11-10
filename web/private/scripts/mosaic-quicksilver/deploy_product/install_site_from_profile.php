@@ -18,9 +18,9 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
     // Enable the mosaic_post_deploy module for future update handling, this
     // probably should be added to the install profile
     passthru('drush en mosaic_post_deploy -y');
-    echo "**************************";
-    echo "Drush: Mosaic Post Deploy Module Enabled";
+    echo "**************************" . PHP_EOL;
+    echo "Drush: Mosaic Post Deploy Module Enabled" . PHP_EOL;
 
-    echo "**************************";
+    echo "**************************" . PHP_EOL;
     echo "DONE: Finished installing site using the standard drupal profile.";
 }
