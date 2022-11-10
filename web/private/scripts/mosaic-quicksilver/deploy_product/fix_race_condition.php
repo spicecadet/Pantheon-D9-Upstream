@@ -5,5 +5,5 @@
  * on the deploy_product "after" stage whereby scripts are started before the container is ready
  */
 
- sleep(30);
- echo "Waking up after 30 seconds";
+ sleep(60);
+ echo "Waking up after 60 seconds";
