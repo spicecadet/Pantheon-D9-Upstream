@@ -12,8 +12,8 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
     // Install the site using the "standard" drupal profile
     $drush_cmd = "drush site-install " . $profile_name . " --account-pass=admin" . " --site-name=" . $site_name . "  -y";
     passthru($drush_cmd);
-    echo "**************************";
-    echo "Drush: Standard Profile installed";
+    echo "**************************" . PHP_EOL;
+    echo "Drush: Standard Profile installed" . PHP_EOL;
 
     // Enable the mosaic_post_deploy module for future update handling, this
     // probably should be added to the install profile
