@@ -5,5 +5,5 @@
  * on the deploy_product "after" stage whereby scripts are started before the container is ready
  */
 $time = 120;
- sleep($time);
- echo "Waking up after " . $time . " seconds";
+// sleep($time);
+echo "Waking up after " . $time . " seconds";
