@@ -15,10 +15,10 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
     echo "**************************" . PHP_EOL;
     echo "Drush: Standard Profile installed" . PHP_EOL;
 
-    // Enable the Display Suite Module
-    passthru('drush en ds -y');
+    // Enable the Webform Module
+    passthru('drush pm-enable webform -y');
     echo "**************************" . PHP_EOL;
-    echo "Drush: Display Suite Module Enabled" . PHP_EOL;
+    echo "Drush: Webform Module Enabled" . PHP_EOL;
 
     echo "**************************" . PHP_EOL;
     echo "DONE: Finished installing site using the standard drupal profile.";
