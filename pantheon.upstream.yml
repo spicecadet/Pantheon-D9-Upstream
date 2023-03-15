@@ -17,8 +17,5 @@ workflows:
   deploy_product:
     after:
       - type: webphp
-        description:  Echo out all available vars for after process of upstream site creation
-        script: private/scripts/echo_quicksilver_vars_available.php
-      - type: webphp
         description: Run a site install with the standard profile
         script: private/scripts/mosaic-quicksilver/deploy_product/install_site_from_profile.php
