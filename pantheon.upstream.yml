@@ -18,4 +18,4 @@ workflows:
     after:
       - type: webphp
         description: Run a site install with the standard profile
-        script: private/scripts/mosaic-quicksilver/deploy_product/install_site_from_profile.php
+        script: private/scripts/quicksilver/deploy_product/install_site_from_profile.php
