@@ -32,6 +32,10 @@ if (isset($_ENV['PANTHEON_ENVIRONMENT'])) {
     echo "**************************" . PHP_EOL;
     echo "Drush: Pathauto Module Enabled" . PHP_EOL;
 
+    passthru('drush pm-enable graphql -y');
+    echo "**************************" . PHP_EOL;
+    echo "Drush: Graphql Module Enabled" . PHP_EOL;
+
     echo "**************************" . PHP_EOL;
     echo "DONE: Finished installing site using the standard drupal profile.";
 }
