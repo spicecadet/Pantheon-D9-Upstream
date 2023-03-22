@@ -16,6 +16,7 @@
         "drupal/admin_toolbar": "^3.3",
         "drupal/config_split": "^1.9",
         "drupal/pathauto": "^1.11",
-        "drupal/devel": "^5.1"
+        "drupal/devel": "^5.1",
+        "drupal/graphql": "^4.4"
     }
 }
