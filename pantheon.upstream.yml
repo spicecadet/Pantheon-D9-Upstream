@@ -12,7 +12,7 @@ protected_web_paths:
   - /sites/default/files/private/
   - /sites/default/files/config/
 
-# OU Quicksilver workflows
+# Quicksilver workflows
 workflows:
   deploy_product:
     after:
