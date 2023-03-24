@@ -19,8 +19,3 @@ workflows:
       - type: webphp
         description: Run a site install with the standard profile
         script: private/scripts/quicksilver/deploy_product/install_site_from_profile.php
-  deploy:
-    after:
-      - type: webphp
-        description: Import configuration from .yml files
-        script: private/scripts/quicksilver/deploy/update_db.php
