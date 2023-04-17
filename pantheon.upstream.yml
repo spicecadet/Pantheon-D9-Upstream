@@ -17,8 +17,5 @@ workflows:
   deploy_product:
     after:
       - type: webphp
-        description: Echo Vars
-        script: private/scripts/quicksilver/deploy_product/echo_vars.php
-      - type: webphp
         description: Run a site install with the standard profile
         script: private/scripts/quicksilver/deploy_product/install_site_from_profile.php
